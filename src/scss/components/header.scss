@@ -1,5 +1,5 @@
 .header {
-  background: #794b9a;
+  background: #222;
   padding: 8px 0;
   position: fixed;
   width: 100%;
@@ -7,7 +7,6 @@
   z-index: 10;
 
   @include media(desktop) {
-    background: transparent;
     padding: 8px 0;
   }
 }
@@ -22,27 +21,13 @@
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
 
   @include media(desktop) {
+    justify-content: center;
     align-items: stretch;
     width: 100%;
-  }
-}
-
-.header-logo-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @include media(desktop) {
-  }
-}
-
-.header-logo-img {
-  @include media(desktop) {
-    min-width: 84px;
   }
 }
 
@@ -50,14 +35,10 @@
   display: none;
 
   @include media(desktop) {
-    box-shadow: 0 4px 8px 6px rgba(34, 22, 56, 0.3);
-    background: #794b9a;
-    border-radius: 16px;
-    padding: 12px 24px;
     display: flex;
     align-items: center;
-    gap: 40px;
-    max-width: max-content;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 
@@ -69,14 +50,15 @@
 
 .nav-list-link {
   @include media(desktop) {
-    padding: 8px;
+    padding: 4px 6px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
     font-weight: 500;
     font-size: 10px;
-    color: #eaf6fe;
+    text-align: center;
+    color: #fcfcfc;
     opacity: 0.8;
     width: 100%;
     max-width: max-content;
@@ -93,7 +75,7 @@
       bottom: 0;
       width: 100%;
       height: 1px;
-      background-color: #eaf6fe;
+      background-color: #e9e9f8;
       transform: scaleX(0);
       transform-origin: center;
       transition:
