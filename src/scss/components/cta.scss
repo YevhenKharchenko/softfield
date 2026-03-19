@@ -82,6 +82,9 @@
 }
 
 .cta-img {
+  margin-left: auto;
+  margin-right: auto;
+
   @include media(desktop) {
   }
 }
