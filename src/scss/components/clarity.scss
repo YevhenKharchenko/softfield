@@ -1,8 +1,8 @@
-.audience-section {
+.clarity-section {
   background: #c8c9db;
 }
 
-.audience-bg-wrapper {
+.clarity-bg-wrapper {
   padding-top: 48px;
   padding-bottom: 48px;
 
@@ -12,30 +12,30 @@
   }
 }
 
-.audience-container {
+.clarity-container {
 }
 
-.audience-title-wrapper {
+.clarity-title-wrapper {
   @include media(desktop) {
   }
 }
 
-.audience-title {
+.clarity-title {
   @include media(desktop) {
   }
 }
 
-.audience-content-wrapper {
+.clarity-content-wrapper {
   @include media(desktop) {
   }
 }
 
-.audience-subtitle {
+.clarity-subtitle {
   @include media(desktop) {
   }
 }
 
-.audience-text {
+.clarity-text {
   font-family: 'Roboto Flex', sans-serif;
   font-weight: 300;
   font-size: 20px;
@@ -49,56 +49,91 @@
   }
 }
 
-.audience-list {
+.clarity-text-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
 
   @include media(desktop) {
     flex-direction: row;
     justify-content: center;
-    align-items: stretch;
     gap: 24px;
+    width: 100%;
   }
 }
 
-.audience-list-item {
+.clarity-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    min-width: 266px;
+    margin: 0;
+    order: 2;
+  }
+}
+
+.clarity-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  @include media(desktop) {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 240px;
+  }
+}
+
+.clarity-list-item {
   border-radius: 0 0 8px 8px;
   border: 1px solid transparent;
   background:
     linear-gradient(180deg, #c8c9db 0%, #e9e9f8 80%) padding-box,
-    linear-gradient(to bottom, transparent 0%, #232323 100%) border-box;
-  padding: 16px 8px 16px 16px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+    linear-gradient(
+        to bottom,
+        transparent 0%,
+        #eacf63 20%,
+        #e18a4b 40%,
+        #4d9d48 60%,
+        #239fb8 80%,
+        #846cb5 100%
+      )
+      border-box;
+  padding: 32px;
   width: 100%;
-  max-width: 343px;
+  max-width: 160px;
 
   @include media(desktop) {
-    padding: 32px 30px;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 180px;
+    max-width: 240px;
   }
 }
 
-.audience-img {
-  min-width: 80px;
+.clarity-top-list {
+  margin-bottom: 16px;
 
   @include media(desktop) {
+    margin-bottom: 0;
+    order: 1;
   }
 }
 
-.audience-item-text {
+.clarity-bottom-list {
+  @include media(desktop) {
+    order: 3;
+  }
+}
+
+.clarity-item-text {
   font-family: 'Roboto Flex', sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
   color: #222;
-  width: 100%;
 
   @include media(desktop) {
   }

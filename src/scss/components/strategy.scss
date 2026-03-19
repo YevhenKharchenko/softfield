@@ -1,0 +1,148 @@
+.strategy-section {
+  background: #c8c9db;
+}
+
+.strategy-bg-wrapper {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @include media(desktop) {
+    padding-top: 56px;
+    padding-bottom: 72px;
+  }
+}
+
+.strategy-container {
+}
+
+.strategy-title-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.strategy-title {
+  @include media(desktop) {
+  }
+}
+
+.strategy-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.strategy-subtitle {
+  @include media(desktop) {
+  }
+}
+
+.strategy-text {
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #222;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+  }
+}
+
+.strategy-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+  }
+}
+
+.strategy-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    margin: 0;
+    order: 2;
+  }
+}
+
+.strategy-img {
+  @include media(desktop) {
+    min-width: 380px;
+  }
+}
+
+.strategy-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  @include media(desktop) {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 240px;
+  }
+}
+
+.strategy-list-item {
+  border-radius: 0 0 8px 8px;
+  border: 1px solid transparent;
+  background:
+    linear-gradient(180deg, #c8c9db 0%, #e9e9f8 80%) padding-box,
+    linear-gradient(
+        to bottom,
+        transparent 0%,
+        #eacf63 20%,
+        #e18a4b 40%,
+        #4d9d48 60%,
+        #239fb8 80%,
+        #846cb5 100%
+      )
+      border-box;
+  padding: 32px;
+  width: 100%;
+  max-width: 160px;
+
+  @include media(desktop) {
+    padding: 39px 32px;
+    max-width: 240px;
+  }
+}
+
+.strategy-top-list {
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+    order: 1;
+  }
+}
+
+.strategy-bottom-list {
+  @include media(desktop) {
+    order: 3;
+  }
+}
+
+.strategy-item-text {
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #222;
+
+  @include media(desktop) {
+  }
+}

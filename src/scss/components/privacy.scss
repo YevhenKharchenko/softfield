@@ -1,43 +1,56 @@
-.privacy-body {
-  .footer-bg-wrapper {
-    background-image: url(../img/common/wave-top-light-mob.png);
-
-    @include media(desktop) {
-      background-image: url(../img/common/wave-top-light-desk.png);
-    }
+.policy-section {
+  @include media(desktop) {
   }
 }
 
-.policy-section {
-  background: #eaf6fe;
-  padding-top: 104px;
+.policy-title-wrapper {
+  background: linear-gradient(
+    90deg,
+    #5e5e5e 0%,
+    #846cb5 20%,
+    #239fb8 40%,
+    #4d9d48 60%,
+    #e18a4b 80%,
+    #eacf63 100%
+  );
+  padding-top: 100px;
+  padding-bottom: 16px;
+
+  @include media(desktop) {
+    padding-top: 120px;
+  }
+}
+
+.policy-bg-wrapper {
+  background: #e9e9f8;
+  padding-top: 40px;
   padding-bottom: 40px;
 
   @include media(desktop) {
-    padding-top: 136px;
-    padding-bottom: 48px;
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
 }
 
 .policy-main-title {
-  text-shadow: 0 2px 2px rgba(34, 22, 56, 0.5);
-  font-family: 'Nunito', sans-serif;
-  font-weight: 900;
+  text-shadow: 0 1px 2px 0 rgba(34, 34, 34, 0.6);
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 500;
   font-size: 32px;
   text-align: center;
-  color: #993ba8;
-  margin-bottom: 40px;
+  color: #fcfcfc;
 
   @include media(desktop) {
-    font-size: 48px;
+    font-size: 40px;
   }
 }
 
 .policy-title {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 500;
   font-size: 20px;
-  color: #221638;
+  line-height: 1.4;
+  color: #222;
   margin-bottom: 16px;
 
   @include media(desktop) {
@@ -45,10 +58,11 @@
 }
 
 .policy-text {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 300;
   font-size: 14px;
-  color: #221638;
+  line-height: 1.4;
+  color: #222;
 
   &:not(:last-child) {
     margin-bottom: 16px;
@@ -64,10 +78,11 @@
 }
 
 .policy-item {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 300;
   font-size: 14px;
-  color: #221638;
+  line-height: 1.4;
+  color: #222;
   margin-bottom: 8px;
 
   &:last-child {

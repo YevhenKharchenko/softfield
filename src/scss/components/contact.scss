@@ -1,22 +1,15 @@
 .contact-section {
-  background: #ade5f6;
-  background-image: url(../img/contact/contact-img-mob.png);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: auto;
-
   @include media(desktop) {
-    background-image: url(../img/contact/contact-img-desk.png);
   }
 }
 
 .contact-bg-wrapper {
-  padding-top: 32px;
-  padding-bottom: 266px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 
   @include media(desktop) {
-    padding-top: 24px;
-    padding-bottom: 940px;
+    padding-top: 56px;
+    padding-bottom: 72px;
   }
 }
 
@@ -35,39 +28,59 @@
 
 .contact-content-wrapper {
   @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.contact-subtitle {
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #222;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
   }
 }
 
 .contact-text {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 300;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.5;
   text-align: center;
-  color: #221638;
+  color: #222;
   margin-bottom: 16px;
 
   @include media(desktop) {
+    margin-left: 80px;
+    margin-bottom: 0;
   }
 }
 
 .contact-email-link {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 300;
   font-size: 14px;
-  line-height: 1.4;
-  color: #221638;
+  line-height: 1.5;
+  color: #222;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 16px;
 
   @include media(desktop) {
+    margin-left: 24px;
   }
 }
 
 .email-icon {
-  min-width: 20px;
+  min-width: 16px;
 
   @include media(desktop) {
   }

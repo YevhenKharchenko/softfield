@@ -1,0 +1,68 @@
+.levels-section {
+}
+
+.levels-bg-wrapper {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @include media(desktop) {
+    padding-top: 56px;
+    padding-bottom: 72px;
+  }
+}
+
+.levels-container {
+}
+
+.levels-title-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.levels-title {
+  @include media(desktop) {
+  }
+}
+
+.levels-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.levels-text-wrapper {
+  @include media(desktop) {
+    max-width: 550px;
+  }
+}
+
+.levels-subtitle {
+  @include media(desktop) {
+    text-align: left;
+  }
+}
+
+.levels-text {
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #222;
+
+  @include media(desktop) {
+    text-align: left;
+  }
+}
+
+.levels-img {
+  @include media(desktop) {
+    min-width: 411px;
+  }
+}

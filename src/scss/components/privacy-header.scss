@@ -1,5 +1,13 @@
 .privacy-header {
-  background: #eaf6fe;
+  background: linear-gradient(
+    90deg,
+    #5e5e5e 0%,
+    #846cb5 20%,
+    #239fb8 40%,
+    #4d9d48 60%,
+    #e18a4b 80%,
+    #eacf63 100%
+  );
   padding-top: 12px;
   padding-bottom: 12px;
   position: fixed;
@@ -15,11 +23,12 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 300;
   font-size: 14px;
+  line-height: 1.4;
   text-align: center;
-  color: #221638;
+  color: #fcfcfc;
   max-width: max-content;
 
   @include media(desktop) {
@@ -27,6 +36,4 @@
 }
 
 .arrow-back-icon {
-  fill: none;
-  stroke: #221638;
 }

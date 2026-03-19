@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://softborder.online/sitemap.xml
+Sitemap: https://softfield.pro/sitemap.xml
