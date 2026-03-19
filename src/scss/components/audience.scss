@@ -1,0 +1,142 @@
+.audience-section {
+}
+
+.audience-bg-wrapper {
+  padding-top: 32px;
+  padding-bottom: 48px;
+
+  @include media(desktop) {
+    padding-top: 24px;
+    padding-bottom: 72px;
+  }
+}
+
+.audience-container {
+}
+
+.audience-title-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.audience-title {
+  @include media(desktop) {
+  }
+}
+
+.audience-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.audience-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.audience-subtitle {
+  @include media(desktop) {
+  }
+}
+
+.audience-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  color: #221638;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-bottom: 32px;
+  }
+}
+
+.audience-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  @include media(desktop) {
+    gap: 16px;
+    max-width: 556px;
+  }
+}
+
+.audience-list-item {
+  box-shadow: inset 0 0 16px 8px rgba(238, 232, 213, 0.2);
+  border: 3px solid rgba(34, 22, 56, 0.3);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 130px;
+
+  &:nth-child(1) {
+    background: #228a3e;
+    max-width: 205px;
+  }
+
+  &:nth-child(2) {
+    background: #993ba8;
+    max-width: 130px;
+  }
+
+  &:nth-child(3) {
+    background: #ab3333;
+    max-width: 130px;
+  }
+
+  &:nth-child(4) {
+    background: #547dbf;
+    max-width: 205px;
+  }
+
+  @include media(desktop) {
+    &:nth-child(1) {
+      max-width: 320px;
+    }
+
+    &:nth-child(2) {
+      max-width: 220px;
+    }
+
+    &:nth-child(3) {
+      max-width: 220px;
+    }
+
+    &:nth-child(4) {
+      max-width: 320px;
+    }
+  }
+}
+
+.audience-item-text {
+  text-shadow: 0 2px 1px 0 rgba(34, 22, 56, 0.6);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  color: #eaf6fe;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.audience-img {
+  @include media(desktop) {
+    min-width: 273px;
+  }
+}

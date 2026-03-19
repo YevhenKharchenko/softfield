@@ -1,0 +1,88 @@
+.privacy-body {
+  .footer-bg-wrapper {
+    background-image: url(../img/common/wave-top-light-mob.png);
+
+    @include media(desktop) {
+      background-image: url(../img/common/wave-top-light-desk.png);
+    }
+  }
+}
+
+.policy-section {
+  background: #eaf6fe;
+  padding-top: 104px;
+  padding-bottom: 40px;
+
+  @include media(desktop) {
+    padding-top: 136px;
+    padding-bottom: 48px;
+  }
+}
+
+.policy-main-title {
+  text-shadow: 0 2px 2px rgba(34, 22, 56, 0.5);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  text-align: center;
+  color: #993ba8;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    font-size: 48px;
+  }
+}
+
+.policy-title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #221638;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #221638;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @include media(desktop) {
+  }
+}
+
+.policy-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.policy-item {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #221638;
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 16px;
+  }
+
+  @include media(desktop) {
+  }
+}
+
+.policy-span {
+  text-decoration: underline;
+}
+
+.policy-link {
+  text-decoration: underline;
+  word-wrap: break-word;
+}

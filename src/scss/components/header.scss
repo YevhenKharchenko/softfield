@@ -1,0 +1,138 @@
+.header {
+  background: #794b9a;
+  padding: 8px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+
+  @include media(desktop) {
+    background: transparent;
+    padding: 8px 0;
+  }
+}
+
+.header-container {
+  padding: 0 24px;
+
+  @include media(desktop) {
+    padding: 0 80px;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include media(desktop) {
+    align-items: stretch;
+    width: 100%;
+  }
+}
+
+.header-logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+  }
+}
+
+.header-logo-img {
+  @include media(desktop) {
+    min-width: 84px;
+  }
+}
+
+.nav-list {
+  display: none;
+
+  @include media(desktop) {
+    box-shadow: 0 4px 8px 6px rgba(34, 22, 56, 0.3);
+    background: #794b9a;
+    border-radius: 16px;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: max-content;
+  }
+}
+
+.nav-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list-link {
+  @include media(desktop) {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    color: #eaf6fe;
+    opacity: 0.8;
+    width: 100%;
+    max-width: max-content;
+    height: 100%;
+    position: relative;
+    transition:
+      color 0.3s ease-in-out,
+      text-shadow 0.3s ease-in-out;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #eaf6fe;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition:
+        transform 0.3s ease-in-out,
+        color 0.3s ease-in-out 0.3s ease-in-out,
+        text-shadow 0.3s ease-in-out 0.3s ease-in-out,
+        opacity 0.3s ease-in-out 0.3s ease-in-out;
+    }
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      text-shadow: 0 0 0 currentColor;
+      opacity: 1;
+
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.close-btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
